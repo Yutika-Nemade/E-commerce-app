@@ -32,7 +32,7 @@ app.use('*',function(req,res){
 
 const PORT = process.env.PORT || 8080;
 
-connectDB.then(() => {
+connectDB().then(() => {
 app.listen(PORT, ()=>{
     
 })
